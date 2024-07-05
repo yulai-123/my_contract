@@ -12,3 +12,5 @@
 # solidity-coverage files
 **/coverage
 **/coverage.json
+
+config/
