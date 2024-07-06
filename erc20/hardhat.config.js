@@ -13,7 +13,7 @@ module.exports = {
     base: {
       url: myConfig.url,
       chainId: myConfig.chainId,
-      // accounts: myConfig.accounts
+      accounts: myConfig.accounts
     }
   }
 };

@@ -11,3 +11,6 @@ REPORT_GAS=true npx hardhat test
 npx hardhat node
 npx hardhat run scripts/deploy.js
 ```
+
+在 base网络部署成功
+erc20合约地址: 0xA9b19c745ACDb789B836D23FBabeB08a9C0eB8bA
