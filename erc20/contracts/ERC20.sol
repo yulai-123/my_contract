@@ -95,9 +95,9 @@ contract ERC20 is IERC20 {
 
 
     function mint(address _owner, uint256 _value) public returns (bool) {
-        require(_owner != address(0), unicode"目标用户不能为0");
-        require(_value > 0, unicode"生成需要大于0");
-        require(_totalSupply + _value >= 0, unicode"生成溢出");
+        require(_owner != address(0), "_owner cannot be 0");
+        require(_value > 0, "_value must be greater than 0");
+        require(_totalSupply + _value >= 0, "arithmetic overflow");
 
         _totalSupply += _value;
 
