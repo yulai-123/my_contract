@@ -8,9 +8,9 @@ const hre = require("hardhat");
 
 async function main() {
 
-  const name = "tt"
-  const symbol = "t"
-  const decimals = 18
+  const name = "test-cat"
+  const symbol = "test"
+  const decimals = 9
 
   const erc20 = await hre.ethers.deployContract("ERC20", [name, symbol, decimals], {});
 

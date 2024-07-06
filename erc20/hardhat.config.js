@@ -1,5 +1,9 @@
 require("@nomicfoundation/hardhat-toolbox");
-require("../my_config.js");
+require('@nomicfoundation/hardhat-ethers');
+require('@nomicfoundation/hardhat-ignition-ethers');
+
+const myConfig = require("./config/my_config.js");
+
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
@@ -9,7 +13,7 @@ module.exports = {
     base: {
       url: myConfig.url,
       chainId: myConfig.chainId,
-      accounts: myConfig.accounts
+      // accounts: myConfig.accounts
     }
   }
 };
