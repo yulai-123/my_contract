@@ -7,21 +7,14 @@
 const hre = require("hardhat");
 
 async function main() {
-
-  const name = "test-cat"
-  const symbol = "cat"
-  const decimals = 9
-
-  const erc20 = await hre.ethers.deployContract("ERC20", [name, symbol, decimals], {});
-
-  await erc20.waitForDeployment();
-
-  console.log("成功部署合约")
+    const test0810 = await hre.ethers.deployContract("TestQuery", [], {})
+    await test0810.waitForDeployment
+    console.log("成功部署合约")
 }
 
 // We recommend this pattern to be able to use async/await everywhere
 // and properly handle errors.
 main().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
+    console.error(error);
+    process.exitCode = 1;
 });
